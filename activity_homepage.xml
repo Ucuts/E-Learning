@@ -12,7 +12,7 @@
         android:layout_width="788dp"
         android:layout_height="1155dp"
         app:srcCompat="@drawable/mainbg"
-        tools:layout_editor_absoluteX="-98dp"
+        tools:layout_editor_absoluteX="-101dp"
         tools:layout_editor_absoluteY="-96dp" />
 
     <ImageView
@@ -262,9 +262,39 @@
     <View
         android:id="@+id/view7"
         android:layout_width="412dp"
-        android:layout_height="57dp"
+        android:layout_height="72dp"
         android:background="#E0E0E0"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-1dp" />
+
+
+    <ImageButton
+        android:id="@+id/Profile"
+        android:layout_width="82dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:src="@drawable/person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="91dp"
+        android:layout_height="82dp"
+        android:background="@null"
+        android:src="@drawable/search"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="91dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
