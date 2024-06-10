@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,11 +10,11 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="457dp"
-        android:layout_height="958dp"
+        android:layout_width="516dp"
+        android:layout_height="1049dp"
         android:src="@drawable/html_homepage"
-        tools:layout_editor_absoluteX="-65dp"
-        tools:layout_editor_absoluteY="-87dp" />
+        tools:layout_editor_absoluteX="-53dp"
+        tools:layout_editor_absoluteY="-136dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -54,12 +55,12 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
         android:text="YOUR HTML COURSE :"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -103,11 +104,12 @@
         android:layout_width="202dp"
         android:layout_height="133dp"
         android:background="#E0E0E0"
+        android:layout_marginTop="48dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/view"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView14"
@@ -127,11 +129,12 @@
         android:id="@+id/view3"
         android:layout_width="353dp"
         android:layout_height="34dp"
+        android:layout_marginTop="28dp"
         android:background="#E0E0E0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
         android:id="@+id/textView15"
@@ -220,6 +223,19 @@
         app:layout_constraintStart_toStartOf="@+id/view5"
         app:layout_constraintTop_toTopOf="@+id/view5" />
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:text="Link"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.392" />
+
     <View
         android:id="@+id/view6"
         android:layout_width="353dp"
@@ -243,6 +259,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/view6"
         app:layout_constraintStart_toStartOf="@+id/view6"
         app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="Heading & Paragraph"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.392" />
 
     <View
         android:id="@+id/view7"
@@ -268,6 +297,19 @@
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toTopOf="@+id/view7" />
 
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="111dp"
+        android:text="Image & Data"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.392" />
+
     <View
         android:id="@+id/view8"
         android:layout_width="353dp"
@@ -291,6 +333,39 @@
         app:layout_constraintBottom_toBottomOf="@+id/view8"
         app:layout_constraintStart_toStartOf="@+id/view8"
         app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:text="Form"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <ImageButton
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="92dp"
+        android:background="@null"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <ImageButton
+        android:layout_width="66dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:src="@drawable/person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
