@@ -9,23 +9,24 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="788dp"
-        android:layout_height="1155dp"
+        android:layout_width="422dp"
+        android:layout_height="846dp"
         app:srcCompat="@drawable/mainbg"
-        tools:layout_editor_absoluteX="-101dp"
-        tools:layout_editor_absoluteY="-96dp" />
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-1dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="151dp"
         android:layout_height="193dp"
         app:srcCompat="@drawable/education"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/judul"
-        android:layout_width="173dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginTop="64dp"
         android:text="E-Learn"
@@ -49,15 +50,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="393dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#F0DDDF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        style="@style/CustomSearchView" />
 
     <View
         android:id="@+id/rectangle"
@@ -85,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HTML"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rectangle"
@@ -117,6 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CSS"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rectangle2"
@@ -149,6 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="JS"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rectangle3"
@@ -194,6 +199,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="HTML"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view4"
@@ -206,6 +212,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hyper Text Markup Language"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view4"
@@ -218,6 +225,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="CSS"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view5"
@@ -230,6 +238,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cascading Style Sheets"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view5"
@@ -242,6 +251,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="JS"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view6"
@@ -253,48 +263,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="JavaScript"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view6"
         app:layout_constraintStart_toStartOf="@+id/view6"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-    <View
-        android:id="@+id/view7"
-        android:layout_width="412dp"
-        android:layout_height="72dp"
-        android:background="#E0E0E0"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-1dp" />
-
-
-    <ImageButton
-        android:id="@+id/Profile"
-        android:layout_width="82dp"
-        android:layout_height="108dp"
-        android:layout_marginEnd="16dp"
-        android:background="@null"
-        android:src="@drawable/person"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view7" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black" />
 
-    <ImageButton
-        android:id="@+id/search"
-        android:layout_width="91dp"
-        android:layout_height="82dp"
-        android:background="@null"
-        android:src="@drawable/search"
-        app:layout_constraintTop_toTopOf="@+id/view7"
-        tools:layout_editor_absoluteX="160dp" />
-
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="91dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="8dp"
-        android:background="@null"
-        android:src="@drawable/home"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toTopOf="@+id/view7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

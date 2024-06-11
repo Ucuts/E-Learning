@@ -32,7 +32,7 @@ class daftar : AppCompatActivity() {
             if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
                 val dbHelper = DatabaseHelper(this)
                 dbHelper.insertUser(name, email, password)
-                Toast.makeText(this, "User registered successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Akun Berhasil Terekam", Toast.LENGTH_SHORT).show()
                 // Clear input fields
                 nameInput.text.clear()
                 emailInput.text.clear()
