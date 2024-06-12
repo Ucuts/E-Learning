@@ -12,10 +12,9 @@
         android:layout_width="422dp"
         android:layout_height="846dp"
         app:srcCompat="@drawable/html_isi"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView73"
@@ -98,10 +97,12 @@
         android:id="@+id/textView77"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Dalam HTML, link (tautan) adalah elemen yang digunakan untuk membuat hyperlink, yang menghubungkan satu halaman web ke halaman lainnya atau ke sumber daya lainnya. Link memungkinkan navigasi antar halaman di web. Elemen yang digunakan untuk membuat hyperlink adalah &lt;a&gt;, yang merupakan singkatan dari 'anchor.'"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="@+id/view22"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view22"
         app:layout_constraintTop_toTopOf="@+id/view22" />
 
@@ -109,7 +110,7 @@
         android:id="@+id/textView78"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Struktur Dasar Tag &lt;a&gt; memiliki atribut utama href yang menunjukkan tujuan dari tautan tersebut. Struktur dasarnya adalah sebagai berikut:"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -130,7 +131,7 @@
         android:id="@+id/textView80"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="link halaman lain :"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -151,7 +152,7 @@
         android:id="@+id/textView82"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="link dalam file html ini :"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -176,7 +177,7 @@
         android:id="@+id/textView84"
         android:layout_width="367dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="- _self: Membuka tautan di jendela atau tab yang sama (default)."
         android:textColor="@color/black"
         android:textSize="15sp"

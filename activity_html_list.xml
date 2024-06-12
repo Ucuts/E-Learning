@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:text="Dalam HTML, daftar (list) adalah struktur yang digunakan untuk mengelompokkan item-item yang terkait. Daftar membantu dalam penyajian informasi yang lebih terorganisir dan mudah dibaca."
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/view15"
         app:layout_constraintStart_toStartOf="@+id/view15"
         app:layout_constraintTop_toTopOf="@+id/view15" />

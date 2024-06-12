@@ -45,14 +45,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="423dp"
-        android:layout_height="239dp"
-        android:layout_marginBottom="240dp"
+        android:layout_width="422dp"
+        android:layout_height="247dp"
+        android:layout_marginBottom="212dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
@@ -69,22 +70,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:textColor="@color/black"
             android:hint="Email"
-            android:textColorHint="@color/black"
             android:inputType="textEmailAddress"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:layout_marginBottom="8dp"
             android:hint="Password"
-            android:textColorHint="@color/black"
             android:inputType="textPassword"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/btn_login"

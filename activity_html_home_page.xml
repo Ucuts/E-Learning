@@ -129,6 +129,7 @@
         android:layout_height="124dp"
         android:text="HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML menggambarkan struktur sebuah halaman........"
         android:textColor="@color/black"
+        android:textSize="14sp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="@+id/view2"

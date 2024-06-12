@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
+import com.yusuf_222003.e_learning.CSS.Css_HomePage
 import com.yusuf_222003.e_learning.HTML.Html_HomePage
 
 class Homepage : AppCompatActivity() {
@@ -29,6 +30,9 @@ class Homepage : AppCompatActivity() {
         val view4 = findViewById<View>(R.id.view4)
         val textView6 = findViewById<TextView>(R.id.textView6)
         val textView7 = findViewById<TextView>(R.id.textView7)
+        val view5 = findViewById<View>(R.id.view5)
+        val textView8 = findViewById<TextView>(R.id.textView8)
+        val textView9 = findViewById<TextView>(R.id.textView9)
 
         view4.setOnClickListener {
             // Ketika View di klik, buka halaman HTML
@@ -43,6 +47,19 @@ class Homepage : AppCompatActivity() {
         textView7.setOnClickListener {
             // Ketika TextView di klik, buka halaman HTML
             startActivity(Intent(this, Html_HomePage::class.java))
+        }
+
+        view5.setOnClickListener {
+            // Ketika View di klik, buka halaman HTML
+            startActivity(Intent(this, Css_HomePage::class.java))
+        }
+        textView8.setOnClickListener {
+            // Ketika View di klik, buka halaman HTML
+            startActivity(Intent(this, Css_HomePage::class.java))
+        }
+        textView9.setOnClickListener {
+            // Ketika View di klik, buka halaman HTML
+            startActivity(Intent(this, Css_HomePage::class.java))
         }
     }
 }
