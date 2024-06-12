@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,8 +13,8 @@
         android:layout_width="422dp"
         android:layout_height="846dp"
         app:srcCompat="@drawable/html_homepage"
-        tools:layout_editor_absoluteX="-15dp"
-        tools:layout_editor_absoluteY="-31dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view9"
@@ -22,7 +23,8 @@
         android:background="#E0E0E0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="163dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="163dp"/>
 
     <ImageView
         android:id="@+id/imageView9"
@@ -46,7 +48,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view9"
         app:layout_constraintEnd_toEndOf="@+id/view9"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/view9"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
         app:layout_constraintVertical_bias="0.428" />
@@ -79,9 +80,9 @@
         android:id="@+id/textView28"
         android:layout_width="282dp"
         android:layout_height="313dp"
-        android:text="HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML menggambarkan struktur sebuah halaman web dengan menggunakan markup. Elemen-elemen HTML adalah blok bangunan dasar dari sebuah halaman web. Setiap elemen HTML diwakili oleh tag, yang terdiri dari tanda kurung sudut (<>) dan nama elemen di dalamnya."
+        android:text="HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML menggambarkan struktur sebuah halaman web dengan menggunakan markup. Elemen-elemen HTML adalah blok bangunan dasar dari sebuah halaman web. Setiap elemen HTML diwakili oleh tag, yang terdiri dari tanda kurung sudut (&lt;&gt;) dan nama elemen di dalamnya."
         android:textColor="@color/black"
-        android:textSize="18.7sp"
+        android:textSize="17.5sp"
         app:layout_constraintBottom_toBottomOf="@+id/view10"
         app:layout_constraintEnd_toEndOf="@+id/view10"
         app:layout_constraintStart_toStartOf="@+id/view10"
@@ -92,8 +93,10 @@
         android:layout_width="99dp"
         android:layout_height="102dp"
         app:srcCompat="@drawable/education"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:id="@+id/textView29"
@@ -104,7 +107,6 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,9 +115,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:text="It education"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <ImageButton
+        android:id="@+id/my_image_button"
+        android:layout_width="73dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:src="@drawable/arrowleft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
